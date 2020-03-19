@@ -1,0 +1,17 @@
+<header>
+  <mat-toolbar color="accent">
+    <mat-toolbar-row>
+      <span class="common">Расписание ВятГУ</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>
+
+<main>
+  <ul class="search-result">
+    <li *ngFor="let group of groups$ | async" >
+      <a routerLink="/detail/{{group.name}}">
+        {{group.name}}
+      </a>
+    </li>
+  </ul>
+</main>

@@ -1,0 +1,33 @@
+
+span{
+  margin-right: 1rem;
+}
+.common{
+  padding: 2rem;
+  font-size: 2rem;
+}
+.raz{
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  background: #673ab7;
+  color: #ffd740;
+}
+
+mat-card-subtitle{
+  font-size: 1.5rem;
+
+  color: #673ab7;
+}
+
+.tail{
+  position: fixed;
+  top: 91%;
+  left: 90%;
+}
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+  color: #FFD740;
+}

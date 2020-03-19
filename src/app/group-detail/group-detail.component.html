@@ -1,0 +1,50 @@
+<header>
+  <mat-toolbar color="accent">
+    <mat-toolbar-row>
+      <span *ngIf="group" class="common">{{group.name | uppercase}}</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>
+
+
+<main>
+
+
+  <div class="day">
+    <div class="raz">
+      <span>Четверг, 05.03</span>
+    </div>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>14:00-15:30</mat-card-title><br>
+        <mat-card-subtitle>9-208</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          ПИб-2301-01-00, 02 подгруппа Элективные дисциплины (модули) по физической культуре и спорту Практическое занятие Авдеева М.С. 9-115 <br> ПИб-2301-01-00, 03 подгруппа Элективные дисциплины (модули) по физической культуре и спорту Практическое занятие Подковырин В.Д. 9-116 <br> ПИб-2301-01-00, 04 подгруппа Элективные дисциплины (модули) по физической культуре и спорту Практическое занятие Полевой Г.Г. 9-101 <br> ПИб-2301-01-00, 05 подгруппа Элективные дисциплины (модули) по физической культуре и спорту Практическое занятие Попова Н.Ю. 9-102 <br> ПИб-2301-01-00, 01 подгруппа Элективные дисциплины (модули) по физической культуре и спорту Практическое занятие Столбов А.Н.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+
+</main>
+
+<!--<div *ngIf="group">
+  <h2>{{group.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{group.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="group.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div>-->
+
+
+
+<div class="tail">
+  <button mat-mini-fab color="accent" (click)="goBack()">
+    <mat-icon>reply</mat-icon>
+  </button>
+</div>

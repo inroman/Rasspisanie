@@ -1,0 +1,20 @@
+<header>
+  <mat-toolbar color="accent">
+    <mat-toolbar-row>
+      <h1>Расписание ВятГУ</h1>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>
+
+<div id="search-component">
+
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+
+  <ul class="search-result">
+    <li *ngFor="let group of groups$ | async" >
+      <a routerLink="/detail/{{group.id}}">
+        {{group.name}}
+      </a>
+    </li>
+  </ul>
+</div>
